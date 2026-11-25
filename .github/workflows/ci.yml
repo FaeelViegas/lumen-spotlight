@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate:
+    name: Validate Schemas, Tests & Packaging
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install GNOME Shell / GJS build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gjs libglib2.0-bin gettext zip python3
+
+      - name: Validate GSettings XML schema
+        run: |
+          glib-compile-schemas --strict schemas/
+
+      - name: Run GJS unit tests
+        run: |
+          gjs -m tests/runTests.js
+
+      - name: Run performance benchmark
+        run: |
+          gjs -m tests/benchmark.js
+
+      - name: Verify extension packaging
+        run: |
+          chmod +x scripts/pack.sh
+          ./scripts/pack.sh
+          test -f dist/lumen-spotlight@faeelviegas.github.io.shell-extension.zip

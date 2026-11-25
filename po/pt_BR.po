@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: lumen 1.1.0\n"
+"POT-Creation-Date: 2026-10-19 20:30-0300\n"
+"PO-Revision-Date: 2026-10-19 20:30-0300\n"
+"Last-Translator: FaeelViegas\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Geral e Aparência"
+msgstr "Geral e Aparência"
+
+msgid "Atalho de Ativação"
+msgstr "Atalho de Ativação"
+
+msgid "Conflito Detectado com Troca de Layout do Ubuntu"
+msgstr "Conflito Detectado com Troca de Layout do Ubuntu"
+
+msgid "Usar Alt+Espaço"
+msgstr "Usar Alt+Espaço"
+
+msgid "Estilo Visual e Comportamento (Spotlight)"
+msgstr "Estilo Visual e Comportamento (Spotlight)"
+
+msgid "Modo de Desfoque de Fundo (Blur)"
+msgstr "Modo de Desfoque de Fundo (Blur)"
+
+msgid "Abertura em Multi-Monitor"
+msgstr "Abertura em Multi-Monitor"
+
+msgid "Painel de Pré-visualização Lateral"
+msgstr "Painel de Pré-visualização Lateral"
+
+msgid "Arquivos e Indexação"
+msgstr "Arquivos e Indexação"
+
+msgid "Privacidade e Segurança"
+msgstr "Privacidade e Segurança"

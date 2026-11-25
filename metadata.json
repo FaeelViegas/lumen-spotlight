@@ -1,0 +1,16 @@
+{
+  "uuid": "lumen-spotlight@faeelviegas.github.io",
+  "name": "Lumen Spotlight",
+  "description": "Instant Spotlight-style launcher and search engine for GNOME Shell 50 (Wayland). Find apps, documents, and code (SQLite FTS5 + LocalSearch), run scientific calculations, convert units and currencies, switch open windows, and control your system with native speed.",
+  "version": 2,
+  "version-name": "1.1.0",
+  "shell-version": [
+    "50"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.lumen",
+  "gettext-domain": "lumen",
+  "url": "https://github.com/FaeelViegas/lumen-spotlight",
+  "session-modes": [
+    "user"
+  ]
+}

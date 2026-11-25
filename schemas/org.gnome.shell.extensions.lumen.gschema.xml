@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="lumen">
+  <enum id="org.gnome.shell.extensions.lumen.BlurMode">
+    <value value="0" nick="hybrid"/>
+    <value value="1" nick="always"/>
+    <value value="2" nick="css-only"/>
+  </enum>
+
+  <enum id="org.gnome.shell.extensions.lumen.MonitorBehavior">
+    <value value="0" nick="pointer"/>
+    <value value="1" nick="active-window"/>
+    <value value="2" nick="primary"/>
+  </enum>
+
+  <schema id="org.gnome.shell.extensions.lumen" path="/org/gnome/shell/extensions/lumen/">
+    <key name="toggle-shortcut" type="as">
+      <default>['&lt;Control&gt;&lt;Alt&gt;s']</default>
+      <summary>Atalho global para abrir o Lumen</summary>
+      <description>Combinação de teclas que exibe ou oculta a barra de busca do Lumen.</description>
+    </key>
+
+    <key name="conflict-warning-dismissed" type="b">
+      <default>false</default>
+      <summary>Aviso de conflito do Super+Espaço dispensado</summary>
+      <description>Indica se o usuário já resolveu ou dispensou o alerta de conflito com o alternador de layout do Ubuntu.</description>
+    </key>
+
+    <key name="theme-preset" type="s">
+      <default>'spotlight-dark'</default>
+      <summary>Tema visual da barra de busca</summary>
+      <description>ID do tema selecionado: spotlight-dark, liquid-glass, crystal-light, obsidian-oled, nord-frost, catppuccin-mocha.</description>
+    </key>
+
+    <key name="search-font-size" type="i">
+      <default>17</default>
+      <range min="13" max="26"/>
+      <summary>Tamanho da fonte da barra de pesquisa (px)</summary>
+      <description>Tamanho em pixels da fonte principal do campo de busca.</description>
+    </key>
+
+    <key name="window-width" type="i">
+      <default>680</default>
+      <range min="520" max="960"/>
+      <summary>Largura da janela do Lumen (px)</summary>
+      <description>Largura base da janela flutuante do Lumen em pixels.</description>
+    </key>
+
+    <key name="border-radius" type="i">
+      <default>16</default>
+      <range min="8" max="28"/>
+      <summary>Arredondamento dos cantos da janela (px)</summary>
+      <description>Raio das bordas arredondadas da janela principal do Lumen.</description>
+    </key>
+
+    <key name="blur-mode" enum="org.gnome.shell.extensions.lumen.BlurMode">
+      <default>'hybrid'</default>
+      <summary>Modo de desfoque de fundo (Blur)</summary>
+      <description>Define como o Shell.BlurEffect é aplicado: híbrido, sempre ativo ou apenas translucidez CSS.</description>
+    </key>
+
+    <key name="monitor-behavior" enum="org.gnome.shell.extensions.lumen.MonitorBehavior">
+      <default>'pointer'</default>
+      <summary>Monitor de abertura</summary>
+      <description>Escolhe em qual monitor a janela do Lumen deve abrir: monitor com o ponteiro, monitor da janela ativa ou monitor primário.</description>
+    </key>
+
+    <key name="show-preview-panel" type="b">
+      <default>true</default>
+      <summary>Exibir painel de pré-visualização</summary>
+      <description>Mostra um painel lateral à direita com pré-visualização de imagens, textos, PDFs e metadados.</description>
+    </key>
+
+    <key name="max-results" type="i">
+      <default>10</default>
+      <range min="5" max="25"/>
+      <summary>Número máximo de resultados visíveis</summary>
+      <description>Quantidade máxima de itens retornados simultaneamente na lista de resultados.</description>
+    </key>
+
+    <key name="debounce-ms" type="i">
+      <default>35</default>
+      <range min="10" max="150"/>
+      <summary>Tempo de debounce da busca (ms)</summary>
+      <description>Intervalo em milissegundos antes de disparar provedores assíncronos de arquivos e rede.</description>
+    </key>
+
+    <key name="search-directories" type="as">
+      <default>['~/Documentos', '~/Downloads', '~/Área de trabalho', '~/Imagens', '~/Library', '~']</default>
+      <summary>Diretórios indexados para busca de arquivos</summary>
+      <description>Lista de caminhos onde o indexador FTS5 e o LocalSearch procuram arquivos e conteúdos.</description>
+    </key>
+
+    <key name="excluded-directories" type="as">
+      <default>['.git', 'node_modules', '.cache', '.local/share/Trash', '__pycache__', '.venv', 'venv', 'target', 'dist', 'build', 'go', 'Android', 'snap', '.npm', '.gradle', '.cargo', '.rustup', '.dotnet', '.nuget']</default>
+      <summary>Diretórios e padrões excluídos da indexação</summary>
+      <description>Nomes de pastas ou caminhos ignorados durante a varredura e o monitoramento de arquivos.</description>
+    </key>
+
+    <key name="hide-code-files" type="b">
+      <default>true</default>
+      <summary>Ocultar arquivos de código-fonte por padrão</summary>
+      <description>Quando ativado, omite extensões de programação (.py, .cs, .js, .ts, .rs, .java, .cpp, etc.) da busca normal, exceto quando solicitado via kind:code.</description>
+    </key>
+
+    <key name="excluded-file-extensions" type="as">
+      <default>['.py', '.pyc', '.cs', '.csproj', '.sln', '.js', '.mjs', '.cjs', '.ts', '.tsx', '.jsx', '.rs', '.go', '.java', '.kt', '.c', '.h', '.cpp', '.hpp', '.rb', '.php', '.swift', '.scala', '.lua', '.sh', '.bash', '.zsh', '.fish', '.json', '.yaml', '.yml', '.toml', '.lock', '.xml', '.css', '.scss', '.less', '.html', '.vue', '.svelte', '.o', '.so', '.dll', '.exe', '.class', '.jar', '.wasm', '.map', '.log', '.tmp']</default>
+      <summary>Extensões de arquivos ocultadas quando o filtro de código está ativo</summary>
+      <description>Lista de extensões técnicas e de código-fonte ignoradas na busca padrão de documentos.</description>
+    </key>
+
+    <key name="enable-file-content-search" type="b">
+      <default>true</default>
+      <summary>Habilitar busca no conteúdo de arquivos</summary>
+      <description>Indexa trechos de arquivos de texto/documentos no banco SQLite FTS5 local.</description>
+    </key>
+
+    <key name="enable-clipboard-history" type="b">
+      <default>false</default>
+      <summary>Habilitar histórico da área de transferência (Opt-in)</summary>
+      <description>Armazena localmente em memória itens copiados recentemente, ignorando gerenciadores de senhas.</description>
+    </key>
+
+    <key name="clipboard-max-items" type="i">
+      <default>25</default>
+      <range min="5" max="100"/>
+      <summary>Tamanho máximo do histórico da área de transferência</summary>
+      <description>Quantidade máxima de entradas retidas na área de transferência.</description>
+    </key>
+
+    <key name="clipboard-excluded-apps" type="as">
+      <default>['org.keepassxc.KeePassXC', 'com.bitwarden.desktop', '1password', 'org.gnome.seahorse.Application', 'org.gnome.World.Secrets']</default>
+      <summary>Aplicativos excluídos do histórico de área de transferência</summary>
+      <description>Lista de IDs ou classes de aplicativos sensíveis cujas cópias nunca são registradas.</description>
+    </key>
+
+    <key name="enable-online-currency" type="b">
+      <default>false</default>
+      <summary>Permitir atualização online de cotações de moedas (Opt-in)</summary>
+      <description>Quando ativado, atualiza taxas de câmbio periodicamente e salva no cache offline.</description>
+    </key>
+
+    <key name="enable-online-dictionary" type="b">
+      <default>false</default>
+      <summary>Permitir consulta online para dicionário/tradução (Opt-in)</summary>
+      <description>Quando desativado, utiliza exclusivamente o dicionário embutido offline.</description>
+    </key>
+
+    <key name="enable-web-search" type="b">
+      <default>true</default>
+      <summary>Habilitar atalhos de busca na web por prefixo</summary>
+      <description>Exibe sugestões de abertura de URL apenas quando o usuário utiliza prefixos explícitos (ex.: g, yt, gh, ddg, wiki).</description>
+    </key>
+
+    <key name="web-search-engines" type="s">
+      <default>'{"g":{"name":"Google","url":"https://www.google.com/search?q=%s","icon":"web-browser-symbolic"},"ddg":{"name":"DuckDuckGo","url":"https://duckduckgo.com/?q=%s","icon":"web-browser-symbolic"},"yt":{"name":"YouTube","url":"https://www.youtube.com/results?search_query=%s","icon":"video-x-generic-symbolic"},"gh":{"name":"GitHub","url":"https://github.com/search?q=%s","icon":"system-software-install-symbolic"},"wiki":{"name":"Wikipédia","url":"https://pt.wikipedia.org/w/index.php?search=%s","icon":"accessories-dictionary-symbolic"}}'</default>
+      <summary>Configuração JSON dos motores de busca na web</summary>
+      <description>Mapa de prefixos para nome, template de URL (%s) e ícone.</description>
+    </key>
+
+    <key name="custom-snippets" type="s">
+      <default>'[{"trigger":";email","title":"E-mail Profissional","content":"you@example.com","description":"Insere seu endereço de e-mail principal"},{"trigger":";data","title":"Data ISO Atual","content":"{{DATE_ISO}}","description":"Copia a data atual no formato AAAA-MM-DD"},{"trigger":";assinatura","title":"Assinatura Padrão","content":"Atenciosamente,\\nEquipe de Engenharia","description":"Texto rápido de despedida"},{"trigger":";uuid","title":"Gerar UUID v4","content":"{{UUID}}","description":"Gera e copia um identificador único UUID v4"}]'</default>
+      <summary>Snippets e ações rápidas personalizadas em JSON</summary>
+      <description>Lista de snippets acionáveis por gatilho ou busca textual.</description>
+    </key>
+
+    <key name="usage-stats" type="s">
+      <default>'{}'</default>
+      <summary>Estatísticas locais de frequência e recência</summary>
+      <description>JSON local contendo contagem de execuções e timestamp do último uso por ID de resultado.</description>
+    </key>
+
+    <key name="currency-rates-cache" type="s">
+      <default>'{"updatedAt":1760900000000,"base":"USD","rates":{"USD":1.0,"BRL":5.65,"EUR":0.92,"GBP":0.78,"JPY":152.4,"CAD":1.38,"AUD":1.51,"CHF":0.87,"ARS":985.0,"BTC":0.0000148}}'</default>
+      <summary>Cache offline de taxas de câmbio</summary>
+      <description>Taxas de conversão monetária armazenadas localmente para uso imediato sem rede.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,477 @@
+/*
+ * Lumen Spotlight — Folha de Estilos Premium e Sistema de Temas (GNOME Shell 50.1)
+ */
+
+.lumen-backdrop {
+    background-color: rgba(0, 0, 0, 0.14);
+}
+
+/* ==========================================================================
+   Tema 1: Padrão (Spotlight Dark)
+   ========================================================================== */
+.lumen-dialog,
+.lumen-dialog.lumen-theme-spotlight-dark {
+    background-color: rgba(24, 26, 31, 0.84);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.52);
+    padding: 0;
+    color: #f3f5f8;
+}
+
+.lumen-dialog.lumen-fallback-acrylic {
+    background-color: rgba(24, 26, 31, 0.96);
+}
+
+/* ==========================================================================
+   Tema 2: Liquid Glass (Otimizado para GPU sem lag de sombras Cairo)
+   ========================================================================== */
+.lumen-dialog.lumen-theme-liquid-glass {
+    background-color: rgba(28, 35, 48, 0.62);
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(255, 255, 255, 0.16);
+    background-gradient-end: rgba(18, 22, 32, 0.56);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 24px;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.44);
+    padding: 0;
+    color: #f8fafc;
+}
+
+.lumen-dialog.lumen-theme-liquid-glass.lumen-fallback-acrylic {
+    background-color: rgba(24, 30, 42, 0.90);
+}
+
+.lumen-liquid-specular-bar {
+    background-gradient-direction: horizontal;
+    background-gradient-start: rgba(255, 255, 255, 0.04);
+    background-gradient-end: rgba(255, 255, 255, 0.42);
+    height: 1px;
+    margin: 0 24px;
+}
+
+.lumen-dialog.lumen-theme-liquid-glass .lumen-entry-row {
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    margin: 8px 10px 6px 10px;
+    padding: 9px 14px;
+}
+
+.lumen-dialog.lumen-theme-liquid-glass .lumen-result-row {
+    border-radius: 12px;
+    padding: 7px 10px;
+    border: 1px solid transparent;
+}
+
+.lumen-dialog.lumen-theme-liquid-glass .lumen-result-row:hover {
+    background-color: rgba(255, 255, 255, 0.11);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.lumen-dialog.lumen-theme-liquid-glass .lumen-result-row:selected {
+    background-color: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    color: #ffffff;
+}
+
+.lumen-dialog.lumen-theme-liquid-glass .lumen-preview-panel {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.lumen-dialog.lumen-theme-liquid-glass .lumen-preview-code-block {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+}
+
+/* ==========================================================================
+   Tema 3: Cristal (macOS Tahoe Light)
+   ========================================================================== */
+.lumen-dialog.lumen-theme-crystal-light {
+    background-color: rgba(248, 250, 252, 0.88);
+    border: 1px solid rgba(15, 23, 42, 0.14);
+    box-shadow: 0 22px 52px rgba(15, 23, 42, 0.22);
+    color: #0f172a;
+}
+
+.lumen-dialog.lumen-theme-crystal-light.lumen-fallback-acrylic {
+    background-color: rgba(250, 251, 253, 0.97);
+}
+
+/* ==========================================================================
+   Tema 4: Obsidian (OLED Preto Puro)
+   ========================================================================== */
+.lumen-dialog.lumen-theme-obsidian-oled {
+    background-color: rgba(8, 9, 12, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 26px 68px rgba(0, 0, 0, 0.78);
+    color: #ffffff;
+}
+
+.lumen-dialog.lumen-theme-obsidian-oled.lumen-fallback-acrylic {
+    background-color: rgba(6, 7, 10, 0.98);
+}
+
+.lumen-dialog.lumen-theme-obsidian-oled .lumen-result-row:selected {
+    background-color: #10b981;
+    color: #052e16;
+}
+
+/* ==========================================================================
+   Tema 5: Nord Frost (Azul Ártico)
+   ========================================================================== */
+.lumen-dialog.lumen-theme-nord-frost {
+    background-color: rgba(46, 52, 64, 0.88);
+    border: 1px solid rgba(136, 192, 208, 0.28);
+    box-shadow: 0 24px 58px rgba(15, 20, 28, 0.62);
+    color: #eceff4;
+}
+
+.lumen-dialog.lumen-theme-nord-frost.lumen-fallback-acrylic {
+    background-color: rgba(46, 52, 64, 0.97);
+}
+
+.lumen-dialog.lumen-theme-nord-frost .lumen-result-row:selected {
+    background-color: #88c0d0;
+    color: #2e3440;
+}
+
+/* ==========================================================================
+   Tema 6: Catppuccin Mocha (Suave)
+   ========================================================================== */
+.lumen-dialog.lumen-theme-catppuccin-mocha {
+    background-color: rgba(30, 30, 46, 0.88);
+    border: 1px solid rgba(245, 194, 231, 0.22);
+    box-shadow: 0 24px 60px rgba(17, 17, 27, 0.68);
+    color: #cdd6f4;
+}
+
+.lumen-dialog.lumen-theme-catppuccin-mocha.lumen-fallback-acrylic {
+    background-color: rgba(30, 30, 46, 0.97);
+}
+
+.lumen-dialog.lumen-theme-catppuccin-mocha .lumen-result-row:selected {
+    background-color: #fab387;
+    color: #11111b;
+}
+
+/* ==========================================================================
+   Barra Superior de Pesquisa (Sem Borda de Foco Nativa!)
+   ========================================================================== */
+.lumen-entry-row {
+    padding: 12px 18px;
+    spacing: 12px;
+}
+
+.lumen-search-icon {
+    color: rgba(244, 246, 248, 0.72);
+}
+
+.lumen-dialog.lumen-light-theme .lumen-search-icon {
+    color: rgba(15, 23, 42, 0.56);
+}
+
+.lumen-search-entry,
+.lumen-search-entry:focus,
+.lumen-search-entry:hover,
+.lumen-search-entry:active {
+    background-color: transparent !important;
+    background-gradient-direction: none !important;
+    border-color: transparent !important;
+    border-width: 0px !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    font-size: 17px;
+    font-weight: 500;
+    color: inherit;
+    padding: 2px 0;
+    margin: 0;
+    caret-color: -st-accent-color;
+    selection-background-color: -st-accent-color;
+    selected-color: -st-accent-fg-color;
+}
+
+.lumen-search-entry StLabel.hint-text {
+    color: rgba(244, 246, 248, 0.46);
+    font-weight: 400;
+}
+
+.lumen-dialog.lumen-light-theme .lumen-search-entry StLabel.hint-text {
+    color: rgba(15, 23, 42, 0.44);
+}
+
+.lumen-latency-badge {
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(244, 246, 248, 0.65);
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    padding: 3px 8px;
+}
+
+.lumen-dialog.lumen-light-theme .lumen-latency-badge {
+    color: rgba(15, 23, 42, 0.58);
+    background-color: rgba(15, 23, 42, 0.08);
+}
+
+/* Banner de conflito Super+Espaço */
+.lumen-conflict-banner {
+    background-color: rgba(234, 88, 12, 0.18);
+    border-bottom: 1px solid rgba(234, 88, 12, 0.35);
+    padding: 8px 16px;
+    spacing: 12px;
+}
+
+.lumen-conflict-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #fdba74;
+}
+
+.lumen-dialog.lumen-light-theme .lumen-conflict-text {
+    color: #9a3412;
+}
+
+.lumen-conflict-btn {
+    background-color: -st-accent-color;
+    color: -st-accent-fg-color;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   Lista de Resultados e Categorias
+   ========================================================================== */
+.lumen-content-split {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    max-height: 440px;
+}
+
+.lumen-dialog.lumen-light-theme .lumen-content-split {
+    border-top: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.lumen-results-scroll {
+    max-height: 430px;
+    padding: 6px 8px;
+}
+
+.lumen-results-list {
+    spacing: 2px;
+}
+
+.lumen-category-header {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    color: rgba(244, 246, 248, 0.56);
+    padding: 8px 10px 3px 10px;
+}
+
+.lumen-dialog.lumen-light-theme .lumen-category-header {
+    color: rgba(15, 23, 42, 0.52);
+}
+
+.lumen-result-row {
+    border-radius: 10px;
+    padding: 7px 10px;
+}
+
+.lumen-result-row:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.lumen-dialog.lumen-light-theme .lumen-result-row:hover {
+    background-color: rgba(15, 23, 42, 0.06);
+}
+
+.lumen-result-row:selected {
+    background-color: -st-accent-color;
+    color: -st-accent-fg-color;
+}
+
+.lumen-result-row-box {
+    spacing: 12px;
+}
+
+.lumen-result-text-box {
+    spacing: 2px;
+}
+
+.lumen-result-title {
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.lumen-result-subtitle {
+    font-size: 11.5px;
+    color: rgba(244, 246, 248, 0.68);
+}
+
+.lumen-dialog.lumen-light-theme .lumen-result-subtitle {
+    color: rgba(15, 23, 42, 0.62);
+}
+
+.lumen-result-row:selected .lumen-result-subtitle {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.lumen-dialog.lumen-theme-obsidian-oled .lumen-result-row:selected .lumen-result-subtitle,
+.lumen-dialog.lumen-theme-nord-frost .lumen-result-row:selected .lumen-result-subtitle,
+.lumen-dialog.lumen-theme-catppuccin-mocha .lumen-result-row:selected .lumen-result-subtitle {
+    color: rgba(15, 23, 42, 0.8);
+}
+
+.lumen-shortcut-badge {
+    font-size: 10.5px;
+    font-weight: 600;
+    color: rgba(244, 246, 248, 0.62);
+    background-color: rgba(255, 255, 255, 0.10);
+    border-radius: 6px;
+    padding: 2px 6px;
+}
+
+.lumen-dialog.lumen-light-theme .lumen-shortcut-badge {
+    color: rgba(15, 23, 42, 0.58);
+    background-color: rgba(15, 23, 42, 0.07);
+}
+
+.lumen-result-row:selected .lumen-shortcut-badge {
+    color: -st-accent-fg-color;
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+/* ==========================================================================
+   Painel Lateral de Pré-visualização + Tooltip de Caminho Completo
+   ========================================================================== */
+.lumen-preview-panel {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 14px;
+    spacing: 8px;
+}
+
+.lumen-dialog.lumen-light-theme .lumen-preview-panel {
+    border-left: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.lumen-preview-header {
+    spacing: 4px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.lumen-dialog.lumen-light-theme .lumen-preview-header {
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.lumen-preview-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.lumen-preview-subtitle {
+    font-size: 11px;
+    color: rgba(244, 246, 248, 0.62);
+    text-align: center;
+}
+
+.lumen-dialog.lumen-light-theme .lumen-preview-subtitle {
+    color: rgba(15, 23, 42, 0.6);
+}
+
+.lumen-preview-code-block {
+    font-family: monospace;
+    font-size: 11px;
+    background-color: rgba(0, 0, 0, 0.24);
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: rgba(244, 246, 248, 0.92);
+}
+
+.lumen-dialog.lumen-light-theme .lumen-preview-code-block {
+    background-color: rgba(15, 23, 42, 0.06);
+    color: #0f172a;
+}
+
+/* Tooltip de Caminho Completo ao passar o mouse */
+.lumen-preview-tooltip {
+    background-color: rgba(15, 23, 42, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 8px;
+    padding: 6px 8px;
+    margin-bottom: 4px;
+}
+
+.lumen-preview-tooltip-text {
+    font-family: monospace;
+    font-size: 10.5px;
+    color: #f8fafc;
+}
+
+.lumen-preview-meta-list {
+    spacing: 3px;
+    padding-top: 4px;
+}
+
+.lumen-preview-meta-row {
+    spacing: 8px;
+    padding: 3px 4px;
+    border-radius: 6px;
+}
+
+.lumen-preview-meta-row:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.lumen-preview-meta-key {
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(244, 246, 248, 0.56);
+}
+
+.lumen-dialog.lumen-light-theme .lumen-preview-meta-key {
+    color: rgba(15, 23, 42, 0.55);
+}
+
+.lumen-preview-meta-val {
+    font-size: 11px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.lumen-preview-meta-val-hoverable {
+    text-decoration: underline;
+    color: rgba(248, 250, 252, 0.92);
+}
+
+.lumen-dialog.lumen-light-theme .lumen-preview-meta-val-hoverable {
+    color: #0f172a;
+}
+
+/* Rodapé de Atalhos */
+.lumen-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 6px 12px;
+    background-color: rgba(0, 0, 0, 0.14);
+}
+
+.lumen-dialog.lumen-light-theme .lumen-footer {
+    border-top: 1px solid rgba(15, 23, 42, 0.08);
+    background-color: rgba(15, 23, 42, 0.04);
+}
+
+.lumen-footer-hints {
+    font-size: 11px;
+    color: rgba(244, 246, 248, 0.62);
+    text-align: center;
+}
+
+.lumen-dialog.lumen-light-theme .lumen-footer-hints {
+    color: rgba(15, 23, 42, 0.58);
+}

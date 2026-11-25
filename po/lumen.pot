@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: lumen 1.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/FaeelViegas/lumen-spotlight/issues\n"
+"POT-Creation-Date: 2026-10-19 20:30-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: prefs.js:27
+msgid "Geral e Aparência"
+msgstr ""
+
+#: prefs.js:33
+msgid "Atalho de Ativação"
+msgstr ""
+
+#: prefs.js:50
+msgid "Conflito Detectado com Troca de Layout do Ubuntu"
+msgstr ""
+
+#: prefs.js:55
+msgid "Usar Alt+Espaço"
+msgstr ""
+
+#: prefs.js:71
+msgid "Estilo Visual e Comportamento (Spotlight)"
+msgstr ""
+
+#: prefs.js:82
+msgid "Modo de Desfoque de Fundo (Blur)"
+msgstr ""
+
+#: prefs.js:98
+msgid "Abertura em Multi-Monitor"
+msgstr ""
+
+#: prefs.js:108
+msgid "Painel de Pré-visualização Lateral"
+msgstr ""
+
+#: prefs.js:145
+msgid "Arquivos e Indexação"
+msgstr ""
+
+#: prefs.js:198
+msgid "Privacidade e Segurança"
+msgstr ""

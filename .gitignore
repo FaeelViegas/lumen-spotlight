@@ -1,0 +1,28 @@
+# Build & distribution artifacts
+dist/
+*.zip
+*.shell-extension.zip
+schemas/gschemas.compiled
+locale/
+*.mo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# SQLite caches
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+
+# Editor & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Internal agent tooling
+.agent/
